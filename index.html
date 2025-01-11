@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Demo Workflow</title>
-        <script src="script.js"></script>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <a id="button1" href="/SupportingPages/support.html">Hello</a>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-container">
+        <h1 id="welcome-text">Welcome to Application</h1>
+        <form id="login-form">
+            <label for="username" id="username-label">Username</label>
+            <input type="text" id="username" name="username">
+            <br>
+            <label for="password" id="password-label">Password</label>
+            <input type="password" id="password" name="password">
+            <br>
+            <button type="submit" id="login-button">LOGIN</button>
+        </form>
+    </div>
+</body>
 </html>
