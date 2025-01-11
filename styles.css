@@ -1,0 +1,70 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333; /* Dark gray background */
+    color: #fff; /* White text color */
+}
+
+/* Login Container */
+#login-container {
+    text-align: center;
+    background-color: #444; /* Slightly lighter gray background for the container */
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Welcome Text */
+#welcome-text {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* Form Styles */
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Labels and Inputs */
+#username-label, #password-label {
+    align-self: flex-start;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+#username, #password {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Login Button */
+#login-button {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    background-color: #006699; /* Dark blue button color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#login-button:hover {
+    background-color: #004466; /* Darker blue on hover */
+}
