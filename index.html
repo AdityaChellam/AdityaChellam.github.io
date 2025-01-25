@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThousandEyes Transaction Test Simulation</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="login-container">
-        <h1 id="welcome-text">Welcome to Application</h1>
-        <form id="login-form">
-            <label for="username" id="username-label">Username</label>
-            <input type="text" id="username" name="username">
-            <br>
-            <label for="password" id="password-label">Password</label>
-            <input type="password" id="password" name="password">
-            <br>
-            <button type="submit" id="login-button">LOGIN</button>
-        </form>
+  <div class="container">
+    <h1>My Application is Too Slow on the Checkout Page</h1>
+    <div class="scenario">
+      <p>
+        Users are complaining that the checkout process is slow. Upon investigation with ThousandEyes Transaction Tests, we identified an oversized product image that is causing significant delays.
+      </p>
     </div>
+    <div class="waterfall-chart">
+      <h2>Waterfall View</h2>
+      <div class="bar">
+        <span>HTML Load</span>
+        <div class="bar-inner short" style="--duration: 2s;"></div>
+      </div>
+      <div class="bar">
+        <span>CSS Load</span>
+        <div class="bar-inner medium" style="--duration: 4s;"></div>
+      </div>
+      <div class="bar">
+        <span>Image Load</span>
+        <div class="bar-inner long highlight" style="--duration: 8s;"></div>
+      </div>
+      <div class="bar">
+        <span>JS Load</span>
+        <div class="bar-inner short" style="--duration: 2s;"></div>
+      </div>
+    </div>
+    <div class="outcome">
+      <h2>Business Value</h2>
+      <p>
+        By identifying the oversized image with ThousandEyes, the team reduced Mean Time to Identify (MTTI) from hours to minutes and Mean Time to Resolve (MTTR) to under a day. Optimizing the image reduced load time by 50%, decreasing cart abandonment by 25%.
+      </p>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
