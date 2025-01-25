@@ -1,10 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const bars = document.querySelectorAll(".bar-inner");
+    const slowImageContainer = document.querySelector(".slow-image");
   
-    // Trigger the animation on page load
-    bars.forEach((bar) => {
-      const duration = getComputedStyle(bar).getPropertyValue("--duration");
-      bar.style.animationDuration = duration;
-    });
+    // Simulate slow image loading (5 seconds delay)
+    setTimeout(() => {
+      const img = document.createElement("img");
+      img.src = "https://via.placeholder.com/150";
+      img.alt = "Product 1";
+      slowImageContainer.innerHTML = "";
+      slowImageContainer.appendChild(img);
+    }, 5000);
   });
   
