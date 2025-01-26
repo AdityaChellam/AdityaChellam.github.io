@@ -64,7 +64,7 @@
     }
 
     .cart-item-price {
-      color: #4CAF50;
+      color: #003853;
       font-size: 1rem;
       margin: 0.5rem 0;
     }
@@ -84,7 +84,7 @@
     .summary-total {
       font-weight: bold;
       font-size: 1.2rem;
-      color: #4CAF50;
+      color: #003566;
       margin-top: 1rem;
       border-top: 2px solid #ddd;
       padding-top: 1rem;
@@ -94,7 +94,7 @@
     #checkout-btn {
       display: block;
       width: 100%;
-      background-color: #4CAF50;
+      background-color: #2aa9df;
       color: white;
       border: none;
       padding: 0.8rem;
@@ -106,7 +106,7 @@
     }
 
     #checkout-btn:hover {
-      background-color: #218838;
+      background-color: #15be3a;
     }
   </style>
 </head>
@@ -137,6 +137,7 @@
     </div>
 
     <!-- Checkout Button -->
+    <br/>
     <button id="checkout-btn">Proceed to Checkout</button>
   </div>
 
@@ -177,11 +178,6 @@
       document.getElementById("tax").textContent = `$${tax.toFixed(2)}`;
       document.getElementById("total").textContent = `$${total.toFixed(2)}`;
     }
-
-    // Checkout button functionality
-    document.getElementById("checkout-btn").addEventListener("click", () => {
-      alert("Thank you for your purchase!");
-    });
 
     // Initialize the checkout page
     document.addEventListener("DOMContentLoaded", () => {
