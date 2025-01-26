@@ -9,46 +9,60 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f8f9fa;
+      background-color: #f3f4f6;
+      color: #333;
     }
 
     header {
-      background-color: #007bff;
+      background-color: #4CAF50;
       color: white;
-      padding: 1rem;
+      padding: 1.5rem;
       text-align: center;
+      font-size: 1.5rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     main {
       padding: 2rem;
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 1rem;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     .product-card {
       background: white;
-      border: 1px solid #ddd;
-      border-radius: 8px;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
       padding: 1rem;
       text-align: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
     .product-card img {
       max-width: 100%;
-      height: auto;
-      border-radius: 4px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
     }
 
     .product-title {
-      font-size: 1rem;
-      margin: 0.5rem 0;
+      font-size: 1.1rem;
+      margin: 0.7rem 0;
+      font-weight: bold;
     }
 
     .product-price {
-      color: #28a745;
+      color: #4CAF50;
       font-weight: bold;
+      font-size: 1rem;
       margin: 0.5rem 0;
     }
 
@@ -56,10 +70,10 @@
       background-color: #007bff;
       color: white;
       border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
       cursor: pointer;
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
 
     .add-to-cart:hover {
@@ -69,6 +83,29 @@
     #cart {
       margin-top: 2rem;
       text-align: center;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #cart h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    #cart-items {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #cart-items li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #ddd;
     }
 
     #checkout-btn {
@@ -76,8 +113,8 @@
       background-color: #28a745;
       color: white;
       border: none;
-      padding: 0.7rem 2rem;
-      border-radius: 4px;
+      padding: 0.8rem 2rem;
+      border-radius: 5px;
       cursor: pointer;
       font-size: 1rem;
     }
@@ -89,7 +126,7 @@
 </head>
 <body>
   <header>
-    <h1>Simple Shopping App</h1>
+    Simple Shopping App
   </header>
 
   <main id="product-grid">
@@ -105,12 +142,12 @@
   </div>
 
   <script>
-    // Sample product data
+    // Sample product data with static images
     const products = [
-      { id: 1, title: "Product 1", price: 10.99, image: "https://via.placeholder.com/150" },
-      { id: 2, title: "Product 2", price: 12.99, image: "https://via.placeholder.com/150" },
-      { id: 3, title: "Product 3", price: 8.99, image: "https://via.placeholder.com/150" },
-      { id: 4, title: "Product 4", price: 15.99, image: "https://via.placeholder.com/150" }
+      { id: 1, title: "Product 1", price: 10.99, image: "img/product1.jpg" },
+      { id: 2, title: "Product 2", price: 12.99, image: "img/product2.jpg" },
+      { id: 3, title: "Product 3", price: 8.99, image: "img/product3.jpg" },
+      { id: 4, title: "Product 4", price: 15.99, image: "img/product4.jpg" }
     ];
 
     const cart = [];
@@ -143,7 +180,7 @@
     function renderCart() {
       const cartItems = document.getElementById("cart-items");
       cartItems.innerHTML = "";
-      cart.forEach((item, index) => {
+      cart.forEach((item) => {
         const li = document.createElement("li");
         li.textContent = `${item.title} - $${item.price.toFixed(2)}`;
         cartItems.appendChild(li);
