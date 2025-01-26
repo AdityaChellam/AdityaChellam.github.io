@@ -1,0 +1,126 @@
+/* General body and layout styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+/* Header styling */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.8rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Banner styling */
+#banner {
+  width: 100%;
+  height: 300px;
+  background-image: url('img/checkout-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 2rem;
+}
+
+/* Main container styling */
+#checkout-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Cart items section */
+#cart-summary {
+  flex: 2;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.cart-item-price {
+  color: #4CAF50;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+/* Order summary section */
+#order-summary {
+  flex: 1;
+  background: #f7f7f7;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#order-summary h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.summary-total {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #4CAF50;
+  margin-top: 1rem;
+  border-top: 2px solid #ddd;
+  padding-top: 1rem;
+}
+
+/* Buttons styling */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
