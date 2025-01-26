@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color: #4CAF50;
+  background-color: #0056c0;
   color: white;
   padding: 1.5rem;
   text-align: center;
@@ -159,13 +159,13 @@ main {
 }
 
 .cart-item-price {
-  color: #4CAF50;
+  color: #000e2e;
   font-size: 0.9rem;
 }
 
 #checkout-btn {
   margin-top: 1rem;
-  background-color: #28a745;
+  background-color: #1f9aff;
   color: white;
   border: none;
   padding: 0.8rem 2rem;
