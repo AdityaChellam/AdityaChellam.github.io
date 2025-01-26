@@ -4,7 +4,7 @@ const products = [
   { id: 2, title: "Cameras", price: 12.99, image: "img/product2.png" },
   { id: 3, title: "Touchpad", price: 8.99, image: "img/product3.png" },
   { id: 4, title: "Collaboration Suite", price: 15.99, image: "img/product4.png" },
-  { id: 5, title: "Video Device", price: 11.99, image: "img/product5.png" },
+  { id: 5, title: "Video Device", price: 11.99, image: "img/background.png" },
   { id: 6, title: "GPU", price: 9.99, image: "img/product6.png" },
   { id: 7, title: "Enduser Devices", price: 14.99, image: "img/product7.png" },
   { id: 8, title: "Watches", price: 19.99, image: "img/product8.png" }
